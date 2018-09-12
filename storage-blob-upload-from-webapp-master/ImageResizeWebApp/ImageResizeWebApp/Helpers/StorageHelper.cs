@@ -33,7 +33,7 @@ namespace ImageResizeWebApp.Helpers
             StorageCredentials storageCredentials = new StorageCredentials(_storageConfig.AccountName, _storageConfig.AccountKey);
 
             // Create cloudstorage account by passing the storagecredentials
-            CloudStorageAccount storageAccount = new CloudStorageAccount(storageCredentials, ".core.chinacloudapi.cn", true);
+            CloudStorageAccount storageAccount = new CloudStorageAccount(storageCredentials, true);
 
             // Create the blob client.
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
